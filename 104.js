@@ -1,3 +1,11 @@
+require("dotenv").config();
+
+const account = process.env["104_account"];
+const password = process.env["104_password"];
+
+console.log(`Account: ${account}`);
+console.log(`Password: ${password}`);
+
 const url =
   "https://apis.104api.com.tw/prohrm/1.0/hrmapi/external/transferCard";
 const token = "your_access_token";
