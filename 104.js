@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const account = process.env["104_account"];
 const password = process.env["104_password"];
+const emp_num = process.env["emp_num"];
+const mourning_cardTime = 1566349095938;
 
 console.log(`Account: ${account}`);
 console.log(`Password: ${password}`);
@@ -17,7 +19,7 @@ const headers = {
 
 const body = JSON.stringify([
   {
-    empNo: "119008",
+    empNo: emp_num,
     cardTime: 1566349095938,
   },
 ]);
